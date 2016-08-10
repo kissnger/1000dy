@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" name="viewport" />
+		<title></title>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<style>
+			blockquote,
+			body,
+			button,
+			dd,
+			dl,
+			dt,
+			fieldset,
+			form,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			hr,
+			input,
+			legend,
+			li,
+			ol,
+			p,
+			pre,
+			td,
+			textarea,
+			th,
+			ul {
+				margin: 0;
+				padding: 0
+			}
+			
+			body,
+			button,
+			input,
+			select,
+			textarea {
+				font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif
+			}
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-size: 100%
+			}
+			
+			address,
+			cite,
+			dfn,
+			em,
+			var {
+				font-style: normal
+			}
+			
+			code,
+			kbd,
+			pre,
+			samp {
+				font-family: courier new, courier, monospace
+			}
+			
+			small {
+				font-size: 12px
+			}
+			
+			b {
+				font-weight: normal;
+			}
+			
+			ol,
+			ul {
+				list-style: none
+			}
+			
+			a {
+				text-decoration: none
+			}
+			
+			a:hover {
+				text-decoration: none
+			}
+			
+			sup {
+				vertical-align: text-top
+			}
+			
+			sub {
+				vertical-align: text-bottom
+			}
+			
+			i {
+				font-style: normal
+			}
+			
+			legend {
+				color: #000
+			}
+			
+			fieldset,
+			img {
+				border: 0
+			}
+			
+			button,
+			input,
+			select,
+			textarea {
+				font-size: 100%
+			}
+			
+			table {
+				border-collapse: collapse;
+				border-spacing: 0
+			}
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				font-size: 100px;
+				overflow-y: hidden
+			}
+			
+			section {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.title {
+				width: 100%;
+				height: 2.8rem;
+				background: url(img/red.png) no-repeat;
+				background-size: 100% 100%;
+				font-size: .25rem;
+				font-weight: 600;
+				text-align: center;
+			}
+			
+			.title span {
+				display: inline-block;
+				margin-top: 0.56rem;
+			}
+			
+			.phone {
+				height: 4.25rem;
+				background: #eb4a4a;
+				padding: 0 .31rem;
+				overflow: hidden;
+			}
+			
+			.phone_input {
+				margin-top: .13rem;
+				height: 2rem;
+				overflow: hidden;
+				text-align: center;
+			}
+			
+			.phone_input span {
+				font-size: .21rem;
+				color: #ffd22c;
+				display: block;
+			}
+			
+			.phone_input p {
+				font-size: .13rem;
+				color: #000000;
+				margin-top: .1rem;
+			}
+			
+			.phone_input .input_fx {
+				width: 2.9rem;
+				height: .44rem;
+				text-align: center;
+				display: block;
+				margin: 0 auto;
+				margin-top: .3rem;
+				background: url(img/btn_left.png) no-repeat;
+				background-size: 100% 100%;
+				font-size: .18rem;
+				color: white;
+				line-height: .44rem;
+				letter-spacing: 2px;
+			}
+			
+			.input_btn {
+				width: 2.9rem;
+				height: .44rem;
+				text-align: center;
+				border-radius: 20px;
+				margin: 0 auto;
+				background: url(img/btn_right.png) no-repeat;
+				background-size: 100% 100%;
+				margin-top: .15rem;
+				font-size: .18rem;
+				color: white;
+				line-height: .44rem;
+				letter-spacing: 2px;
+			}
+			
+			.phone_text_title {
+				height: .6rem;
+				font-size: .13rem;
+				text-align: center;
+				line-height: .6rem;
+			}
+			
+			.phone_text_title img {
+				width: .7rem;
+				height: .05rem;
+				margin-bottom: 0.03rem;
+			}
+			
+			.phone_text_title a {
+				margin: 0 .15rem 0 .15rem;
+			}
+			
+			.phone_text p {
+				font-size: .12rem;
+				line-height: .2rem;
+			}
+			
+			.foots {
+				height: .56rem;
+			}
+			
+			.foots img {
+				width: 1.5rem;
+				height: .35rem;
+				display: block;
+				margin: auto;
+				margin-top: .14rem;
+			}
+			
+			#mask {
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.5);
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 100;
+				display: none;
+			}
+			
+			#mask img {
+				width: 1.9rem;
+				height: .9rem;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="mask">
+			<img src="img/guide.png" />
+		</div>
+		<section id="wrapper">
+			<div class="box">
+				<div class="title">
+					<span><i>100</i>元优惠券</span>
+				</div>
+				<div class="phone">
+
+					<div class="phone_input">
+						<span>成功领取<i> 100元</i>优惠券！</span>
+						<p>在"我的"里查看优惠券</p>
+						<div class="input_fx">分享给好友</div>
+						<div class="input_btn">打开千陌出行客户端</div>
+					</div>
+					<div class="phone_text">
+						<div class="phone_text_title">
+							<span><img src="img/wire_left.png"/><a>活动规则</a><img src="img/wire_right.png"/></span>
+						</div>
+						<p>1、同一个手机号只能领取一次</p>
+						<p>2、用领取优惠券的手机号在“千陌出行”APP登录，在个人中心中查看优惠券</p>
+						<p>3、一笔订单只能使用一张优惠券</p>
+						<p>4、优惠券不可以提现、转赠</p>
+					</div>
+				</div>
+				<div class="foots">
+					<img src="img/qm_go.png" />
+				</div>
+			</div>
+		</section>
+	</body>
+
+</html>
+<script type="text/javascript">
+	var myScroll = new IScroll('#wrapper');
+	$(".input_fx").tap(function() {
+		console.info(this)
+		$("#mask").show();
+	});
+	$("#mask").tap(function() {
+		$(this).hide();
+	});
+	$(".input_btn").tap(function() {
+		if(isWeiXin()) {
+			location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=cn.qmbus.mc";
+		} else if(is_ios() == true){
+			applink_ios();
+		}else{
+			applink_And();
+		}
+	});
+
+	function isWeiXin() {
+		var ua = window.navigator.userAgent.toLowerCase();
+		if(ua.match(/MicroMessenger/i) == 'micromessenger') {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	function is_ios() {
+		var u = navigator.userAgent,
+			app = navigator.appVersion;
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		return isiOS;
+	}
+	function applink_ios() {
+		window.location = "com.1000mob.QMBusSwiftApTest";//这个地址是测试版本的  这个是线上的com.1000mob.QMBusSwiftApp
+		var clickedAt = +new Date;
+		setTimeout(function() {
+			!window.document.webkitHidden && setTimeout(function() {
+				if(+new Date - clickedAt < 2000) {
+					window.location = "http://a.app.qq.com/o/simple.jsp?pkgname=cn.qmbus.mc";//这个是应用宝的下载链接
+				}
+			}, 500);
+		}, 500)
+
+	}
+	function applink_And() {
+		var ifr = document.createElement('iframe');
+		ifr.src = 'myapp://qmbus/openwith';
+		ifr.style.display = 'none';
+		document.body.appendChild(ifr);
+		var loadDateTime = new Date();
+		window.setTimeout(function() {
+			document.body.removeChild(ifr);
+			var timeOutDateTime = new Date();
+			var diffTime = timeOutDateTime - loadDateTime;
+			if(diffTime < 1100) {
+				window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=cn.qmbus.mc';
+			}
+		}, 1000);
+	}
+	
+</script>

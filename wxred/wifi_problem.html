@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" name="viewport" />
+		<title></title>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			html {
+				font-size: 100px;
+				width: 100%;
+				height: 100%;
+			}
+			body {
+				width: 100%;
+				height: 100%;
+				font-family: "微软雅黑", "宋体";
+				font-size: .15rem;
+				color: rgb(51, 51, 51);
+				overflow-y: hidden;
+			}
+			#wrapper{
+				width: 100%;
+				height: 100%;
+			}
+			section{
+				padding-bottom: .6rem;
+			}
+			.title {
+				font-size: .17rem;
+				text-align: center;
+				margin-top: .3rem;
+				margin-bottom: .1rem;
+			}
+			
+			.title_litle {
+				font-size: .15rem;
+				font-weight: 600;
+			}
+			
+			ul {
+				padding: 0 .15rem;
+			}
+			
+			li {
+				list-style: none;
+			}
+			.select{
+				text-align: center;
+				margin-top: .15rem;
+				margin-bottom: .15rem;
+			}
+			td{
+				padding: 0 .1rem;
+			}
+			.probloms{
+				font-size: .13rem;
+				margin-top: .1rem;
+			}
+			.probloms_one{
+				margin-bottom: .1rem;
+				margin-top: .1rem;
+				font-weight: 600;
+			}
+			span{
+				margin-left: .2rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<section>
+				<div class="title">车载Wi-Fi设备常见问题</div>
+				<div class="qm_msg">
+					<ul>
+						<li class="one">
+							<p class="title_litle">1.1设备指示灯状态说明：</p>
+							<div class="select probloms">
+								<table border="1" bordercolor="black" cellspacing="0">
+									<tr>
+										<td>指示灯</td>
+										<td>状态</td>
+										<td>说明</td>
+									</tr>
+									<tr>
+										<td>Wi-Fi1 灯</td>
+										<td>慢闪</td>
+										<td>网络搜索中</td>
+									</tr>
+									<tr>
+										<td>Wi-Fi1 灯</td>
+										<td>快闪</td>
+										<td>硬盘故障</td>
+									</tr>
+									<tr>
+										<td>Wi-Fi2 灯</td>
+										<td>灯常亮</td>
+										<td>WiFi正常</td>
+									</tr>
+									<tr>
+										<td>Wi-Fi2 灯</td>
+										<td>慢闪</td>
+										<td>网络搜索中</td>
+									</tr>
+									<tr>
+										<td>Wi-Fi2 灯</td>
+										<td>快闪</td>
+										<td>硬盘故障</td>
+									</tr>
+									<tr>
+										<td>4G灯</td>
+										<td>常灭</td>
+										<td>4G模块故障</td>
+									</tr>
+									<tr>
+										<td>4G灯</td>
+										<td>慢闪</td>
+										<td>信号搜索中</td>
+									</tr>
+									<tr>
+										<td>4G灯</td>
+										<td>常亮</td>
+										<td>已联网</td>
+									</tr>
+									<tr>
+										<td>GPS灯</td>
+										<td>常灭</td>
+										<td>无GPS数据</td>
+									</tr>
+									<tr>
+										<td>GPS灯</td>
+										<td>快闪</td>
+										<td>GPS没定位,但有数据收到</td>
+									</tr>
+									<tr>
+										<td>GPS灯</td>
+										<td>常亮</td>
+										<td>GPS已定位</td>
+									</tr>
+								</table>
+							</div>
+						</li>
+						<li class="two">
+							<p class="title_litle">1.2常见故障排查</p>
+							<div class="probloms">
+								<p class="probloms_one">①全部灯不亮</p>
+								<span>检查电源连接是否正确，更换电源线排除电源线损坏，更换设备验证汽车点烟器是否有电，更换的设备出现同样故障说明点烟器没电或损坏。</span>
+								<p class="probloms_one">②搜索不到Wi-Fi热点</p>
+								<p>同类故障：Wi-Fi热点时有时无；只有一个Wi-Fi热点；Wi-Fi灯不亮。</p>
+								<span>检查设备Wi-Fi指示灯是否正常，重启再试；把其他设备断电，单独拿这台设备测试，重启再试；联系运维确认软件是否更新到稳定版本，更新完成重启设备再试。</span>
+								<p class="probloms_one">③4G灯闪或不亮</p>
+								<span>用电信手机确认测试位置4G信号覆盖是否良好；4G天线更换成杆状天线并正确安装；联系运维确认设备软件是否是稳定版本。</span>
+								<p class="probloms_one">④没有弹出千陌首页或首页异常</p>
+								<span>检查手机是否已成功连接Wi-Fi；联系运维确认软件版本是否已更新到稳定版本。</span>
+								<p class="probloms_one">⑤手机获取认证码时提示再试一次</p>
+								<span>确认测试位置电信4G信号已覆盖，检查4G灯是否在闪，确认4G天线已更换成杆状天线并正确安装；联系运维确认后台是否异常。</span>
+								<p class="probloms_one">⑥收不到验证码</p>
+								<span>确认测试位置电信4G信号已覆盖，检查4G灯是否在闪，检测手机是否设置了短信屏蔽，确认4G天线已更换成杆状天线并正确安装；联系运维确认后台是否异常。</span>
+								<p class="probloms_one">⑦上不了外网</p>
+								<span>确认测试位置电信4G信号已覆盖，检查4G灯是否在闪，4G天线已更换成杆状天线并正确安装，检测手机是否认证成功；联系运维确认后台是否异常。</span>
+								<p class="probloms_one">⑧播放不了内网或外网电影</p>
+								<span>一般是固件或页面异常造成，联系伟杰跟进处理。</span>
+								<p class="probloms_one">⑨设备温度过高</p>
+								<span>检查设备是否处于密闭环境；更换设备检查温度是否同样过高，如果是说明汽车电源异常。</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	var myScroll = new IScroll('#wrapper');
+</script>

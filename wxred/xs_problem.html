@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" name="viewport" />
+		<title></title>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			html {
+				font-size: 100px;
+				width: 100%;
+				height: 100%;
+			}
+			body {
+				width: 100%;
+				height: 100%;
+				font-family: "微软雅黑", "宋体";
+				font-size: .15rem;
+				color: rgb(51, 51, 51);
+				overflow-y: hidden;
+			}
+			#wrapper{
+				width: 100%;
+				height: 100%;
+			}
+			section{
+				padding-bottom: .6rem;
+			}
+			.title {
+				font-size: .17rem;
+				text-align: center;
+				margin-top: .3rem;
+				margin-bottom: .1rem;
+			}
+			
+			.title_litle {
+				font-size: .15rem;
+				font-weight: 600;
+			}
+			
+			ul {
+				padding: 0 .15rem;
+			}
+			
+			li {
+				list-style: none;
+			}
+			.select{
+				text-align: center;
+				margin-top: .15rem;
+				margin-bottom: .15rem;
+			}
+			td{
+				padding: 0 .1rem;
+			}
+			.probloms{
+				font-size: .13rem;
+				margin-top: .1rem;
+			}
+			.probloms_one{
+				margin-bottom: .1rem;
+				margin-top: .1rem;
+				font-weight: 600;
+			}
+			.probloms_two{
+				font-weight: 100;
+				font-size: .13rem;
+				margin-bottom: .1rem;
+				margin-top: .1rem;
+				text-align: left;
+			}
+			span{
+				margin-left: .2rem;
+			}
+			img{
+				width: 280px;
+				height: 160px;
+			}
+			.img_phone{
+				width: 280px;
+				height: 400px;
+				margin-bottom: .1rem;
+				margin-top: .1rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<section>
+				<div class="title">车载Wi-Fi设备使用指导书</div>
+				<div class="qm_msg">
+					<ul>
+						<li class="one">
+							<p class="title_litle">1. 基础知识</p>
+							<p class="probloms_one">1.1 功能简介</p>
+							<p>设备基于电信4G网络、GPS卫星系统和Wi-Fi协议工作，设备内置SIM卡，自动连接4G网络，同时提供2个Wi-Fi热点，手机接入任意一个热点后进行短信认证，认证成功后手机可以免费上网（外网），无论手机是否完成认证都可以浏览使用设备本地（内网）的视频、游戏、APP等资源。设备带有GPS模块，后台可以通过GPS模块对设备进行跟踪监控。</p>
+							<p class="probloms_one">1.1 配件说明</p>
+							<div class="select probloms">
+								<span>表1 装机清单</span>
+								<table border="1" bordercolor="black" cellspacing="0">
+									<tr>
+										<td>序号</td>
+										<td>名称</td>
+										<td>数量</td>
+										<td>单位</td>
+										<td>备注</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>车载路由器</td>
+										<td>1</td>
+										<td>台</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>4G天线</td>
+										<td>2</td>
+										<td>条</td>
+										<td>白色</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Wi-Fi天线</td>
+										<td>4</td>
+										<td>条</td>
+										<td>黑色</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>点烟器电源线</td>
+										<td>1</td>
+										<td>条</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>说明书</td>
+										<td>1</td>
+										<td>份</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>安装螺丝</td>
+										<td>4</td>
+										<td>颗</td>
+										<td>自攻螺丝</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>3M贴</td>
+										<td>1</td>
+										<td>块</td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<p class="probloms_two">①4G天线（白色）：</p>
+							<span>2根，设备通过4G天线发射或接收4G无线信号，和电信基站进行数据交互，接入设备的手机才能上网（外网）；</span>
+							<p class="probloms_two">②Wi-Fi天线（黑色）：</p>
+							<span>4根，设备通过Wi-Fi天线和手机进行数据交互，手机连上Wi-Fi后才能浏览内网和外网内容；</span>
+							<p class="probloms_two">③GPS天线：</p>
+							<span>1根，设备通过GPS天线接收卫星数据，然后计算出自己的位置信息，通过4G信号发送给云端。该天线是有源天线，天线需要通过射频电缆从设备获得电源才能正常工作；</span><br />
+							<span>注：设备的GPS只接收卫星信号，不对外发射信号，理论上不会干扰车上其他GPS。</span>
+							<p class="probloms_two">④电源输入：</p>
+							<span>点烟器电源线和市电适配器两种，设备在室内测试时使用市电适配器供电，装车时使用点烟器电源线供电，点烟器电源线内部带有保险丝。</span>
+							<p class="probloms_one">1.3规格</p>
+							<span>工作电压：9~36V（DC）</span><br />
+							<span>平均功耗：＜30W</span><br />
+							<span>工作温度：0~70度</span><br />
+							<p class="probloms_one">2安装</p>
+							<p class="probloms_one">2.1安装天线</p>
+							<span>设备面板标识如图示，按照标识安装安排对应的天线Wi-Fi（黑色）、4G（白色）、GPS：</span><br />
+							<div class="select">
+							<div style="text-align: center;"><img src="img/wt_one.png"/></div><br />
+							<span>图1 设备面板标识</span><br />
+							<p class="probloms_two">安装完成后如下图：</p>
+							<div style="text-align: center;"><img src="img/wt_two.png"/></div><br />
+							<span>图2 天线安装示意图</span><br />
+							</div>
+							<span>注意：GPS天线用3M胶粘贴在汽车玻璃窗上，并让GPS天线四周远离金属至少10cm。</span>
+							<p class="probloms_one">2.2测试（市场端）</p>
+							<span>市场人员拿到设备后先在线升级软件，升级完成后检查软件已更新完成，再对设备测试。注意，软件升级及测试要在电信4G信号覆盖良好的环境中进行。</span><br />
+							<span>步骤：</span>
+							<p class="probloms_two">①确定测试环境电信4G信号强度：</p>
+							<span>打开电信手机->[设置]->[关于手机]->[状态信息]->[SIM卡状态]，如下图，卡槽一电信4G（LTE）信号强度是-113dBm，信号太差，设备可正常使用的电信4G信号强度在0~-100dBm之间。</span>
+							<div style="text-align: center;"><img class="img_phone" src="img/phone.png"/><br />
+								<span>图3 电信4G信号强度测试截图</span>
+							</div>
+							<p class="probloms_two">②登记：</p>
+							<span>市场人员把编号汇总发给运维（闫仁健），运维在后台设置升级分组管理。</span>
+							<p class="probloms_two">③升级：</p>
+							<span>设备分散摆放，不要上下叠在一起，然后批量通电。升级建议晚上进行，通电一个晚上，设备会通过后台自动升级。</span>
+							<p class="probloms_two">④检查：</p>
+							<span>运维在设备升级后的次日对设备进行软件版本检查，确认已升级完成后通知市场人员。</span>
+							<p class="probloms_two">⑤测试：</p>
+							<span>市场人员对升级完成的设备上电进行初步调试，指示灯同时亮一下，然后持续亮起最后Wi-Fi、4G灯常亮，GPS闪烁（室内环境），硬件基本判断正常，手机连接Wi-Fi，分别对页面相关内容和外网体验。注意，为了避免Wi-Fi相互干扰，测试过程每台设备单独进行，其他设备断电，如果一定多台同时测试每台设备至少相隔2米，测试时手机靠近待测设备远离其他设备。</span>
+							<p class="probloms_two">⑥故障处理：</p>
+							<span>按上述流程测试的设备仍有问题联系运维跟进处理。</span>
+							<p class="probloms_one">2.3设备安装方式：</p>
+							<span>①利用配套的3M粘贴胶，粘贴在光滑的平面上。</span><br />
+							<span>②螺丝固定方式：用配套的螺丝分别打进设备的4个螺丝孔，固定在车上。</span><br />
+							<p class="probloms_one">2.4设备安装要求：</p>
+							<span>①设备安装完成后，要检测是否牢固，不能出现松动。</span><br />
+							<span>②不能安装在发热源周围，设备周围保持自然通风散热。</span><br />
+							<span>③天线尽量远离金属，以免影响无线信号质量。</span><br />
+							<span>④禁止将设备放入金属或塑料封蔽环境，防止无线信号被屏蔽或设备散热不良。</span><br />
+							<p class="probloms_one">3.常见问题</p>
+							<p class="probloms_one">3.1设备指示灯状态说明：</p>
+							<div class="select probloms">
+								<table border="1" bordercolor="black" cellspacing="0">
+									<tr>
+										<td>指示灯</td>
+										<td>状态</td>
+										<td>说明</td>
+									</tr>
+									<tr>
+										<td>Wi-Fi1 灯</td>
+										<td>慢闪</td>
+										<td>网络搜索中</td>
+									</tr>
+									<tr>
+										<td>Wi-Fi1 灯</td>
+										<td>快闪</td>
+										<td>硬盘故障</td>
+									</tr>
+									<tr>
+										<td>Wi-Fi2 灯</td>
+										<td>灯常亮</td>
+										<td>WiFi正常</td>
+									</tr>
+									<tr>
+										<td>Wi-Fi2 灯</td>
+										<td>慢闪</td>
+										<td>网络搜索中</td>
+									</tr>
+									<tr>
+										<td>Wi-Fi2 灯</td>
+										<td>快闪</td>
+										<td>硬盘故障</td>
+									</tr>
+									<tr>
+										<td>4G灯</td>
+										<td>常灭</td>
+										<td>4G模块故障</td>
+									</tr>
+									<tr>
+										<td>4G灯</td>
+										<td>慢闪</td>
+										<td>信号搜索中</td>
+									</tr>
+									<tr>
+										<td>4G灯</td>
+										<td>常亮</td>
+										<td>已联网</td>
+									</tr>
+									<tr>
+										<td>GPS灯</td>
+										<td>常灭</td>
+										<td>无GPS数据</td>
+									</tr>
+									<tr>
+										<td>GPS灯</td>
+										<td>快闪</td>
+										<td>GPS没定位,但有数据收到</td>
+									</tr>
+									<tr>
+										<td>GPS灯</td>
+										<td>常亮</td>
+										<td>GPS已定位</td>
+									</tr>
+								</table>
+							</div>
+						</li>
+						<li class="two"> 
+							<p class="title_litle">3.2常见故障排查</p>
+							<div class="probloms">
+								<p class="probloms_one">①全部灯不亮</p>
+								<span>检查电源连接是否正确，更换电源线排除电源线损坏，更换设备验证汽车点烟器是否有电，更换的设备出现同样故障说明点烟器没电或损坏。</span>
+								<p class="probloms_one">②搜索不到Wi-Fi热点</p>
+								<p>同类故障：Wi-Fi热点时有时无；只有一个Wi-Fi热点；Wi-Fi灯不亮。</p>
+								<span>检查设备Wi-Fi指示灯是否正常，重启再试；把其他设备断电，单独拿这台设备测试，重启再试；联系运维确认软件是否更新到稳定版本，更新完成重启设备再试。</span>
+								<p class="probloms_one">③4G灯闪或不亮</p>
+								<span>用电信手机确认测试位置4G信号覆盖是否良好；4G天线更换成杆状天线并正确安装；联系运维确认设备软件是否是稳定版本。</span>
+								<p class="probloms_one">④没有弹出千陌首页或首页异常</p>
+								<span>检查手机是否已成功连接Wi-Fi；联系运维确认软件版本是否已更新到稳定版本。</span>
+								<p class="probloms_one">⑤手机获取认证码时提示再试一次</p>
+								<span>确认测试位置电信4G信号已覆盖，检查4G灯是否在闪，确认4G天线已更换成杆状天线并正确安装；联系运维确认后台是否异常。</span>
+								<p class="probloms_one">⑥收不到验证码</p>
+								<span>确认测试位置电信4G信号已覆盖，检查4G灯是否在闪，检测手机是否设置了短信屏蔽，确认4G天线已更换成杆状天线并正确安装；联系运维确认后台是否异常。</span>
+								<p class="probloms_one">⑦上不了外网</p>
+								<span>确认测试位置电信4G信号已覆盖，检查4G灯是否在闪，4G天线已更换成杆状天线并正确安装，检测手机是否认证成功；联系运维确认后台是否异常。</span>
+								<p class="probloms_one">⑧播放不了内网或外网电影</p>
+								<span>一般是固件或页面异常造成，联系伟杰跟进处理。</span>
+								<p class="probloms_one">⑨设备温度过高</p>
+								<span>检查设备是否处于密闭环境；更换设备检查温度是否同样过高，如果是说明汽车电源异常。</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	var myScroll = new IScroll('#wrapper');
+</script>
